@@ -35,5 +35,5 @@ vnames <- as.character(vnames)
 labels <- c("subject", "activity", vnames)
 colnames(data) <- labels
 # Create a tidy data set with the average of each variable for each activity and each subject.
-
+write.table(data,file = "./tidydataset.txt", row.name=FALSE)
 # Ran out of time
